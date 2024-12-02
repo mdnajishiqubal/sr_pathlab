@@ -605,3 +605,17 @@
 .copyright a:hover {
     color: var(--bs-primary);
 }
+/* Optional - Ensuring the select field looks the same as input fields */
+.form-select {
+    padding-left: 2.5rem; /* Match the padding for the icon */
+    font-weight: 500;
+    color: #333; /* Ensure the text color is consistent */
+    height: calc(3rem + 2px); /* Match the height of the input fields */
+    border: 1px solid #ccc; /* Optional border styling */
+}
+
+/* Optional - Remove default focus styling for uniformity */
+.form-select:focus {
+    border-color: #007bff; /* Same border color as the input fields */
+    box-shadow: 0 0 0 0.25rem rgba(38, 143, 255, 0.25); /* Optional focus box-shadow */
+}
