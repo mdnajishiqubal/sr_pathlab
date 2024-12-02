@@ -454,13 +454,13 @@
     <!-- Service End -->
 
 
-    <!-- Appoinment Start -->
+    <!-- Appointment Start -->
     <div class="container-fluid py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h1 class="display-6 mb-4">We Ensure You Will Always Get The Best Result</h1>
-                    <p>we are committed to providing the highest standard of diagnostic services, ensuring that you will always get the best result. With a focus on precision, reliability, and timely delivery, we use state-of-the-art technology and the latest medical techniques to guarantee accurate and dependable results every time.</p>
+                    <p>We are committed to providing the highest standard of diagnostic services, ensuring that you will always get the best result. With a focus on precision, reliability, and timely delivery, we use state-of-the-art technology and the latest medical techniques to guarantee accurate and dependable results every time.</p>
                     <p class="mb-4">At SR Pathlab your health and peace of mind are our top priorities, and we guarantee that you will always receive the most reliable results to guide your healthcare journey.</p>
                     <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.3s">
                         <div class="icon-box-primary">
@@ -468,7 +468,7 @@
                         </div>
                         <div class="ms-3">
                             <h5>Office Address</h5>
-                            <span>Yadav Market, Muzaffarpur - Mahua Rd, Mahua, Bihar 844102</span>
+                            <span>Yadav Market, Muzaffarpur - Mahua Rd, Mahua, Bihar 844122</span>
                         </div>
                     </div>
                     <hr>
@@ -476,60 +476,76 @@
                         <div class="icon-box-primary">
                             <i class="bi bi-clock text-dark fs-1"></i>
                         </div>
-                        <div class="ms-3">
-                            <h5>Office Time</h5>
-                            <span>Mon-Sat 09am-5pm, Sun Closed</span>
+                        <div>
+                            <small class="me-3"><i class="fa fa-clock me-2"></i>Mon-Sun 09am-5pm</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <h2 class="mb-4">Online Appoinment</h2>
+                    <h2 class="mb-4 d-flex align-items-center">
+                        Online Appointment Via Whatsapp
+                        <i class="bi bi-whatsapp fs-2 ms-2 text-success"></i>
+                    </h2>
                     <div class="row g-3">
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                <label for="name">Your Name</label>
+                                <i class="fa fa-user position-absolute top-50 start-0 translate-middle-y ms-3" style="color: #007bff;"></i>
+                                <input type="text" class="form-control ps-5" id="name" placeholder="Your Name">
+                                <label for="name" class="ms-4" style="font-weight: 500; color: #333;">Your Name</label>
                             </div>
                         </div>
+
+                        <!-- Email Field with Icon Inside -->
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="email" class="form-control" id="mail" placeholder="Your Email">
-                                <label for="mail">Your Email</label>
+                                <i class="fa fa-envelope position-absolute top-50 start-0 translate-middle-y ms-3" style="color: #007bff;"></i>
+                                <input type="email" class="form-control ps-5" id="mail" placeholder="Your Email">
+                                <label for="mail" class="ms-4" style="font-weight: 500; color: #333;">Your Email</label>
                             </div>
                         </div>
+
+                        <!-- Mobile Field with Icon Inside -->
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
-                                <label for="mobile">Your Mobile</label>
+                                <i class="fa fa-phone position-absolute top-50 start-0 translate-middle-y ms-3" style="color: #007bff;"></i>
+                                <input type="tel" class="form-control ps-5" id="mobile" placeholder="Your Mobile">
+                                <label for="mobile" class="ms-4" style="font-weight: 500; color: #333;">Your Mobile</label>
                             </div>
                         </div>
+
+                        <!-- Service Dropdown with Icon Inside -->
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <select class="form-select" id="service">
+                                <i class="fa fa-cogs position-absolute top-50 start-0 translate-middle-y ms-3" style="color: #007bff;"></i>
+                                <select class="form-select ps-5" id="service">
                                     <option selected>Pathology Testing</option>
                                     <option value="">Microbiology Tests</option>
                                     <option value="">Biochemistry Tests</option>
-                                    <option value="">Histopatology Tests</option>
+                                    <option value="">Histopathology Tests</option>
                                 </select>
-                                <label for="service">Choose A Service</label>
+                                <label for="service" class="ms-4" style="font-weight: 500; color: #333;">Choose A Service</label>
                             </div>
                         </div>
+
+                        <!-- Message Field with Icon Inside -->
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                    style="height: 130px"></textarea>
-                                <label for="message">Message</label>
+                                <i class="fa fa-comment position-absolute top-50 start-0 translate-middle-y ms-3" style="color: #007bff;"></i>
+                                <textarea class="form-control ps-5" placeholder="Leave a message here" id="message" style="height: 130px"></textarea>
+                                <label for="message" class="ms-4" style="font-weight: 500; color: #333;">Message</label>
                             </div>
                         </div>
+
+                        <!-- Submit Button -->
                         <div class="col-12 text-center">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
+                            <button class="btn btn-primary w-100 py-3" id="submit-btn" type="button">Submit Now</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Appoinment Start -->
+    <!-- Appointment End -->
 
 
     <!-- Team Start -->
@@ -719,6 +735,17 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        document.getElementById("submit-btn").addEventListener("click", function () {
+            const name = document.getElementById("name").value;
+            const phone = document.getElementById("mobile").value;
+            const message = document.getElementById("message").value;
+            const whatsappURL = `https://wa.me/919608725027?text=${encodeURIComponent(
+                `Name: ${name}\nPhone: ${phone}\nMessage: ${message}`
+            )}`;
+            window.open(whatsappURL, "_blank");
+        });
+    </script>
 </body>
 
 </html>
